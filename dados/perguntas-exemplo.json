@@ -1,0 +1,62 @@
+[
+  {
+    "enunciado": "A tecnologia nuclear possui aplicacoes na medicina.",
+    "resposta": "V",
+    "explicacao": "O kickoff apresenta medicina nuclear e producao de radiofarmacos entre as aplicacoes da tecnologia nuclear.",
+    "referencia": "AMAZUL - Kick-off FIAP - 13OUT26.pdf, p. 34"
+  },
+  {
+    "enunciado": "A tecnologia nuclear so possui aplicacoes militares.",
+    "resposta": "F",
+    "explicacao": "O material tambem apresenta aplicacoes em medicina, alimentos e geracao de eletricidade.",
+    "referencia": "AMAZUL - Kick-off FIAP - 13OUT26.pdf, p. 34"
+  },
+  {
+    "enunciado": "A irradiacao de alimentos e uma aplicacao da tecnologia nuclear.",
+    "resposta": "V",
+    "explicacao": "A irradiacao de alimentos aparece entre as aplicacoes apresentadas pela AMAZUL.",
+    "referencia": "AMAZUL - Kick-off FIAP - 13OUT26.pdf, p. 34"
+  },
+  {
+    "enunciado": "A radiacao esta ausente do nosso cotidiano.",
+    "resposta": "F",
+    "explicacao": "O kickoff destaca que a radiacao esta presente no ambiente e que convivemos com ela.",
+    "referencia": "AMAZUL - Kick-off FIAP - 13OUT26.pdf, p. 10"
+  },
+  {
+    "enunciado": "O ciclo do combustivel nuclear inclui varias etapas.",
+    "resposta": "V",
+    "explicacao": "O material apresenta etapas como mineracao, conversao, enriquecimento e fabricacao do combustivel.",
+    "referencia": "AMAZUL - Kick-off FIAP - 13OUT26.pdf, p. 13"
+  },
+  {
+    "enunciado": "O enriquecimento e a fabricacao de pastilhas sao a mesma etapa do ciclo do combustivel.",
+    "resposta": "F",
+    "explicacao": "O diagrama do ciclo apresenta enriquecimento e fabricacao de pastilhas como etapas diferentes.",
+    "referencia": "AMAZUL - Kick-off FIAP - 13OUT26.pdf, p. 13"
+  },
+  {
+    "enunciado": "Pastilhas de dioxido de uranio aparecem no ciclo do combustivel apresentado pela AMAZUL.",
+    "resposta": "V",
+    "explicacao": "O diagrama inclui pastilhas, varetas e elementos combustiveis.",
+    "referencia": "AMAZUL - Kick-off FIAP - 13OUT26.pdf, p. 13"
+  },
+  {
+    "enunciado": "O material apresenta a producao de radiofarmacos como uma aplicacao nuclear.",
+    "resposta": "V",
+    "explicacao": "A producao de radiofarmacos aparece no panorama de aplicacoes em beneficio da sociedade.",
+    "referencia": "AMAZUL - Kick-off FIAP - 13OUT26.pdf, p. 34"
+  },
+  {
+    "enunciado": "A gestao de rejeitos radioativos pode ser ignorada no ciclo apresentado no kickoff.",
+    "resposta": "F",
+    "explicacao": "O ciclo apresentado inclui o deposito de rejeitos radioativos.",
+    "referencia": "AMAZUL - Kick-off FIAP - 13OUT26.pdf, p. 13"
+  },
+  {
+    "enunciado": "A tecnologia nuclear pode ser abordada por jogos educativos de mito ou verdade.",
+    "resposta": "V",
+    "explicacao": "O Desafio 01 sugere quiz, jogos de verdadeiro ou falso e cards com explicacao e referencia.",
+    "referencia": "AMAZUL - Kick-off FIAP - 13OUT26.pdf, p. 44"
+  }
+]

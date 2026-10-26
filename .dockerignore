@@ -1,0 +1,8 @@
+# Arquivos que NÃO entram no contexto do docker build
+# (boa prática da Aula 10: reduz o contexto e evita copiar credenciais)
+.env
+target/
+data/
+.idea/
+.vscode/
+*.log
