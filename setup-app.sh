@@ -1,9 +1,5 @@
 #!/bin/bash
 # setup-app.sh - Instala o Docker na VM, gera a imagem da API e sobe o container
-# Executar DENTRO da VM, na raiz do repositório clonado (onde está o Dockerfile)
-# Antes de rodar, crie o .env com as credenciais do Oracle (nunca vai para o GitHub):
-#   cp .env.example .env
-#   nano .env
 # Uso:
 #   chmod +x setup-app.sh
 #   ./setup-app.sh
@@ -41,8 +37,8 @@ sudo docker image ls
 echo ""
 
 echo "[5/6] Subindo o container $CONTAINER_NAME (host $PORT -> container $PORT)..."
-# --env-file: carrega DB_URL, DB_USERNAME e DB_PASSWORD do .env (Aula 10: ENV / --env-file)
-# --restart unless-stopped: o container volta sozinho se a VM reiniciar (Aula 22/10)
+# --env-file: carrega DB_URL, DB_USERNAME e DB_PASSWORD do .env
+# --restart unless-stopped: o container volta sozinho se a VM reiniciar
 sudo docker run -d --name $CONTAINER_NAME \
   -p $PORT:$PORT \
   --env-file .env \
