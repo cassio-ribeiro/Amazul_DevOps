@@ -6,7 +6,7 @@ RG="rg-nucleo-sprint1"
 
 echo "[1/2] Apagando o Grupo de Recursos $RG (VM, IP, VNet, NSG e discos)..."
 # Sem --no-wait de propósito: o terminal espera a exclusão terminar,
-# assim a comprovação aparece no vídeo
+
 az group delete --name $RG --yes
 echo ""
 
