@@ -1,6 +1,4 @@
 # Dockerfile da API Núcleo (Java 25 + Spring Boot 4.1.1)
-# Baseado no exemplo multi-stage da Aula 10 (Dockerfile) - Prof. João Menk
-# Única mudança em relação à aula: a versão do Java (17 -> 25), que é a do pom.xml do projeto
 
 # Estágio 1: build da aplicação com Maven
 FROM maven:3.9-eclipse-temurin-25 AS builder
@@ -17,7 +15,7 @@ RUN mvn clean package -DskipTests
 # Estágio 2: imagem enxuta só para execução
 FROM eclipse-temurin:25-jre
 
-# Usuário não-root (requisito de segurança da disciplina)
+# Usuário não-root (requisito de segurança)
 RUN addgroup --system appuser && adduser --system --ingroup appuser appuser
 
 WORKDIR /app
