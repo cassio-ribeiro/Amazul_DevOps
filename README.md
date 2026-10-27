@@ -20,7 +20,7 @@ Vídeo da demonstração: TODO (link do YouTube, não listado)
 
 ![Arquitetura](docs/arquitetura.png)
 
-Fluxo: o usuário (navegador, cURL ou app) acessa o **IP público da VM** na porta **8080**. O NSG da Azure libera essa porta, o Docker encaminha a requisição para o container da API, e a API lê e grava as perguntas no **Oracle da FIAP** pela porta 1521.
+Fluxo: o usuário (navegador, cURL ou app) acessa o **IP público da VM** na porta **8080**. O NSG da Azure libera essa porta, o Docker encaminha a requisição para o container da API, e a API lê e grava as perguntas no banco de dados do **Oracle da FIAP** pela porta 1521.
 
 | Componente | Tecnologia |
 |------------|------------|
