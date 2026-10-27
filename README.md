@@ -1,6 +1,6 @@
 # Núcleo API - DevOps Tools & Cloud Computing (Sprint 1)
 
-API Java (Spring Boot) do projeto **Núcleo**, app educativo sobre tecnologia nuclear (jogo *Mito ou Verdade*). Nesta sprint, a API roda em um container Docker dentro de uma VM Linux na Microsoft Azure, criada com Azure CLI, e persiste as perguntas no Oracle da FIAP.
+API Java (Spring Boot) do projeto **Núcleo**, app educativo sobre tecnologia nuclear (jogo *Mito ou Verdade*). Nesta sprint, a API roda em um container Docker dentro de uma VM Linux na Microsoft Azure, criada com Azure CLI, e persiste as perguntas no banco de dados da Oracle da FIAP.
 
 ## Integrantes
 
