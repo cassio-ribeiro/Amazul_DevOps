@@ -31,7 +31,7 @@ az account show --query "{Sub:id, Nome:name}" -o jsonc
 echo ""
 
 echo "[2/5] Criando o Grupo de Recursos $RG em $LOCATION..."
-az group create --name $RG --location $LOCATION
+az group create --name $RG --location $LOCATION -o table
 echo ""
 
 echo "[3/5] Criando a VM $VM ($IMAGE, $SIZE)..."
@@ -54,7 +54,8 @@ echo "VM criada. IP público: $IP"
 echo ""
 
 echo "[4/5] Liberando a porta $PORT da API no NSG..."
-az vm open-port --resource-group $RG --name $VM --port $PORT --priority 1010
+# -o table: resumo em tabela, em vez do JSON completo do NSG
+az vm open-port --resource-group $RG --name $VM --port $PORT --priority 1010 -o table
 echo ""
 
 echo "[5/5] Infraestrutura pronta!"

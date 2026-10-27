@@ -29,7 +29,10 @@ sudo docker --version
 echo ""
 
 echo "[3/6] Conferindo o arquivo .env com as credenciais do Oracle..."
-ls -l .env || echo "ATENÇÃO: crie o .env antes (cp .env.example .env && nano .env)"
+# Mostra só a URL do banco (a senha não aparece). O esperado é oracle.fiap.com.br
+grep DB_URL .env || exit 1
+# Se ainda estiver com o valor do .env.example, para o script aqui
+grep -q "@HOST:" .env && echo "ERRO: o .env ainda está com os valores de exemplo. Edite com: nano .env" && exit 1
 echo ""
 
 echo "[4/6] Gerando a imagem $IMAGE_NAME a partir do Dockerfile..."
@@ -51,4 +54,6 @@ echo ""
 echo "[6/6] Aguarde o Spring Boot iniciar e confira os logs com:"
 echo "  sudo docker logs -f $CONTAINER_NAME"
 echo "Teste pela sua máquina (IP público, nunca localhost):"
-echo "  curl -X GET http://<IP_PUBLICO_DA_VM>:$PORT/perguntas"
+echo "  curl -X GET http://IP_DA_VM:$PORT/perguntas"
+echo "Swagger no navegador:"
+echo "  http://IP_DA_VM:$PORT/swagger-ui"
