@@ -1,27 +1,25 @@
 #!/bin/bash
 # deploy-infra.sh - Cria a infraestrutura na Azure (Grupo de Recursos, VM e porta)
-# Executar no Azure Cloud Shell (Bash) ou no Git Bash com a Azure CLI instalada
 # Uso (no Cloud Shell, depois do git clone do repositório):
 #   chmod +x deploy-infra.sh
 #   ./deploy-infra.sh
-# Rodar como arquivo .sh evita o erro da CP2 de colar comandos com \ no Cloud Shell
 
 # ===== Variáveis =====
 RG="rg-nucleo-sprint1"
-LOCATION="southafricanorth" # região que funcionou na cota de estudante no ensaio da CP2
+LOCATION="southafricanorth" 
 VM="vm-nucleo-api"
 IMAGE="Ubuntu2404"
-SIZE="Standard_B2als_v2"   # 2 vCPU / 4 GB, tamanho que funcionou na CP2 (suficiente para o build Maven)
-ADMIN_USER="rm567295"       # usuário da VM = RM
-PORT=8080                  # server.port da API (application.properties)
+SIZE="Standard_B2als_v2"   
+ADMIN_USER="rm567295"      
+PORT=8080                  
 
 echo "*************************************"
 echo "Projeto Núcleo - Deploy da Infraestrutura"
 echo "*************************************"
 echo ""
 
-# Senha da VM digitada na hora, para não ficar gravada no GitHub
-# (mínimo 12 caracteres, com 3 de 4: maiúscula, minúscula, número, especial)
+
+
 echo "Digite a senha do usuário $ADMIN_USER da VM:"
 read ADMIN_PASSWORD
 echo ""
