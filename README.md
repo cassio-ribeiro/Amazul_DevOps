@@ -14,7 +14,7 @@ Turma: **2TDSPR**
 | Matheus Peres Moraes de Jesus | 567300 |
 | Cassio Ribeiro | 567295 |
 
-Vídeo da demonstração: Vídeo da demonstração: [Assistir no YouTube]([LINK_DO_VIDEO](https://youtu.be/0HzkH-y1eTs))
+Vídeo da demonstração: [Assistir no YouTube]([LINK_DO_VIDEO](https://youtu.be/0HzkH-y1eTs))
 
 ## Arquitetura
 
